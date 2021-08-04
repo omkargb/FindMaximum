@@ -25,7 +25,7 @@ namespace FindMaximum
                 return secondValue;
             if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
                 return thirdValue;
-            throw new Exception(" 3 values are Equal");
+            throw new Exception(" All three values are Equal. ");
         }
     }
 }
