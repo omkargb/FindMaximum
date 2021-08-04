@@ -4,10 +4,20 @@ using System.Text;
 
 namespace FindMaximum
 {
-    public class MaxNumCheck
+    public class MaxNumCheck<T> where T : IComparable
     {
+        public T firstValue, secondValue, thirdValue;
+
         //Generic Type extends Comparable
-        public T MaximumOf<T>(T firstValue, T secondValue, T thirdValue) where T : IComparable
+
+        public MaxNumCheck(T firstValue, T secondValue, T thirdValue)
+        {
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
+        }
+
+        public T MaximumOf()
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
                 return firstValue;
@@ -17,7 +27,5 @@ namespace FindMaximum
                 return thirdValue;
             throw new Exception(" 3 values are Equal");
         }
-
-
     }
 }
