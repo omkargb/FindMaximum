@@ -8,7 +8,8 @@ namespace FindMaximum
         {
             Console.WriteLine("Welcome to Find maximum of 3 programs using generics ");
             MaxNumCheck mnc = new MaxNumCheck();
-            mnc.IntMax(10, 20, 30);
+            mnc.FloatMax(10, 20, 30);
+
         }
     }
 }

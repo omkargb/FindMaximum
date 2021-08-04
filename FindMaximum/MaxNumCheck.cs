@@ -6,7 +6,7 @@ namespace FindMaximum
 {
     public class MaxNumCheck
     {
-        public int IntMax(int num1, int num2, int num3)
+        public float FloatMax(float num1, float num2, float num3)
         {
             if (num1.CompareTo(num2) > 0 && num1.CompareTo(num3) > 0)
                 return num1;
