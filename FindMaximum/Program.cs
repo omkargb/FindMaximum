@@ -6,9 +6,10 @@ namespace FindMaximum
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Find maximum of 3 programs using generics ");
-            MaxNumCheck mnc = new MaxNumCheck();
-            mnc.FloatMax(10, 20, 30);
+            Console.WriteLine(" Welcome to Find maximum of 3 programs using generics ");
+            MaxNumCheck check = new MaxNumCheck();
+            check.IntMax(10, 20, 30);
+            check.FloatMax(10.123f, 20.123f, 30.123f);
 
         }
     }
